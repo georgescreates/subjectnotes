@@ -1,1 +1,1 @@
-# SubjectNotes - Think quietly about it
+# SubjectNotes - Think quietly about it.
