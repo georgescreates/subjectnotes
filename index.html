@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en-fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive-index.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/svg/snotes-favicon.svg">
+    <title>SubjectNotes | Pensez-y tranquillement. - v0.0.06.2021</title>
+</head>
+<body>
+    <section id="left-section">
+        <div class="" id="brand">
+            <img id="brand-logo" src="./images/svg/snotes-colored-logo.svg" alt="Logo officiel de SubjectNotes">
+            <small>v0.0.06.2021</small>
+        </div>
+        <div class="" id="school">
+            <h5>CTPEA</h5>
+            <p>1ère Année</p>
+            <small>2020-2021</small>
+        </div>
+    </section>
+
+    <section id="mid-section">
+        <div class="form-div" id="form-div">
+            <form id="form" action="">
+                <div class="options-div">
+                    <div class="option-box">
+                        <label for="subject-selector">Matière</label>
+                        <select name="subject-selector" id="subject-selector" class="selected-option">
+                            <option value="Economie">Economie</option>
+                            <option value="Algèbre">Algèbre</option>
+                            <option value="Statistique Descriptive">Statistique Descriptive</option>
+                            <option value="Comptabilité">Comptabilité</option>
+                            <option value="Espagnol">Espagnol</option>
+                            <option value="Anglais">Anglais</option>
+                            <option value="Analyse">Analyse</option>
+                            <option value="Français">Français</option>
+                            <option value="Probabilité">Probabilité</option>
+                        </select>
+                    </div>
+                    <div class="option-box">
+                        <label for="result-input">Résultat</label>
+                        <input id="result-input" type="number" value="60" placeholder="0-100" min="0" max="100" class="selected-option" required>
+                    </div>
+                    <div class="option-box">
+                        <label for="coef-selector">Coefficient</label>
+                        <select name="coef-selector" id="coef-selector" class="selected-option">
+                            <option value="1.5">1.5</option>
+                            <option value="1">1</option>
+                            <option value="0.5">0.5</option>
+                            <option value="0.0" title="Coefficient 0 pour des épreuves prevues mais non subies.">0</option>
+                        </select>
+                    </div>
+                    <div class="option-box">
+                        <label for="period-selector">Période</label>
+                        <select name="period-selector" id="period-selector" class="selected-option">
+                            <option value="Intra 1">Intra 1</option>
+                            <option value="Final 1">Final 1</option>
+                            <option value="Intra 2">Intra 2</option>
+                            <option value="Final 2">Final 2</option>
+                            <option value="Work 1">Devoir 1</option>
+                            <option value="Work 2">Devoir 2</option>
+                        </select>
+                    </div>
+                    <div class="option-box">
+                        <label for="percentages-selector">Pourcentage</label>
+                        <select name="percentages-selector" id="percentages-selector" class="selected-option">
+                            <option value="0.35">35%</option>
+                            <option value="0.00">0%</option>
+                            <option value="0.05">5%</option>
+                            <option value="0.10">10%</option>
+                            <option value="0.15">15%</option>
+                            <option value="0.20">20%</option>
+                            <option value="0.25">25%</option>
+                            <option value="0.30">30%</option>
+                            <option value="0.40">40%</option>
+                            <option value="0.45">45%</option>
+                            <option value="0.50">50%</option>
+                            <option value="0.55">55%</option>
+                            <option value="0.60">60%</option>
+                            <option value="0.65">65%</option>
+                            <option value="0.70">70%</option>
+                            <option value="0.75">75%</option>
+                            <option value="0.80">80%</option>
+                            <option value="0.85">85%</option>
+                            <option value="0.90">90%</option>
+                            <option value="0.95">95%</option>
+                            <option value="1.00">100%</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="submit-div">
+                    <button class="primary-btn" id="submit-btn">Soumettre</button>
+                </div>
+            </form>
+        </div>
+        <div class="semesters-div" id="semesters-div">
+            <div class="semester-div" id="sem1-div">
+                <h5>Semestre 1</h5>
+                <div class="period-boxes-div">
+                    <div class="period-box intra-period-box">
+                        <button class="period-box-head">
+                            <span>Intra</span>
+                        </button>
+                        <div class="period-box-body">
+                            <ul class="subject-list">
+                                <li class="subject-item">
+                                    <p>Economie</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Algèbre</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Statistique Descriptive</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Comptabilité</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Espagnol</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Anglais</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Analyse</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="period-box-bottom">
+                            <p>Moyenne :</p>
+                            <p class="averages-p" id="sem1-intra1-average"></p>
+                        </div>
+                    </div>
+                    <div class="period-box final-period-box">
+                        <button class="period-box-head">
+                            <span>Final</span>
+                        </button>
+                        <div class="period-box-body">
+                            <ul class="subject-list">
+                                <li class="subject-item">
+                                    <p>Economie</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Algèbre</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Statistique Descriptive</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Comptabilité</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Espagnol</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Anglais</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Analyse</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Français</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="period-box-bottom">
+                            <p>Moyenne :</p>
+                            <p class="averages-p" id="sem1-final1-average"></p>
+                        </div>
+                    </div>
+                    <div class="period-box homework-box">
+                        <button class="period-box-head">
+                            <span>Devoir</span>
+                        </button>
+                        <div class="period-box-body">
+                            <ul class="subject-list">
+                                <li class="subject-item">
+                                    <p>Algèbre</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Statistique Descriptive</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Comptabilité</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Espagnol</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Anglais</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Analyse</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="semester-div" id="sem2-div">
+                <h5>Semestre 2</h5>
+                <div class="period-boxes-div">
+                    <div class="period-box intra-period-box">
+                        <button class="period-box-head">
+                            <span>Intra</span>
+                        </button>
+                        <div class="period-box-body">
+                            <ul class="subject-list">
+                                <li class="subject-item">
+                                    <p>Economie</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Algèbre</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Probabilité</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Comptabilité</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Espagnol</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Anglais</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Analyse</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="period-box-bottom">
+                            <p>Moyenne :</p>
+                            <p class="averages-p" id="sem2-intra2-average"></p>
+                        </div>
+                    </div>
+                    <div class="period-box final-period-box">
+                        <button class="period-box-head">
+                            <span>Final</span>
+                        </button>
+                        <div class="period-box-body">
+                            <ul class="subject-list">
+                                <li class="subject-item">
+                                    <p>Economie</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Algèbre</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Probabilité</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Comptabilité</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Espagnol</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Anglais</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Analyse</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Français</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="period-box-bottom">
+                            <p>Moyenne :</p>
+                            <p class="averages-p" id="sem2-final2-average"></p>
+                        </div>
+                    </div>
+                    <div class="period-box homework-box">
+                        <button class="period-box-head">
+                            <span>Devoir</span>
+                        </button>
+                        <div class="period-box-body">
+                            <ul class="subject-list">
+                                <li class="subject-item">
+                                    <p>Algèbre</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Probabilité</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Comptabilité</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Espagnol</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Anglais</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                                <li class="subject-item">
+                                    <p>Analyse</p>
+                                    <input value="" type="text" class="subject-input">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="right-section">
+        <div class="results-div">
+            <h5>Résultats</h5>
+            <div class="result-div-container">
+                <div class="period-result-div">
+                    <button class="result-div-head">
+                        <span>Semestre 1</span>
+                    </button>
+                    <ul class="semester1-result-list">
+                        <li class="subject-item-semester1-result">
+                            <p>Economie</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="subject-item-semester1-result">
+                            <p>Algèbre</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="subject-item-semester1-result">
+                            <p>Statistique Descriptive</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="subject-item-semester1-result">
+                            <p>Comptabilité</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="subject-item-semester1-result">
+                            <p>Espagnol</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="subject-item-semester1-result">
+                            <p>Anglais</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="subject-item-semester1-result">
+                            <p>Analyse</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="subject-item-semester1-result">
+                            <p>Français</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="moy-item semester1-moy-item">
+                            <p>Moyenne</p>
+                            <p class="average-glob-field"></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="period-result-div">
+                    <button class="result-div-head">
+                        <span>Semestre 2</span>
+                    </button>
+                    <ul class="semester2-result-list">
+                        <li class="subject-item-semester2-result">
+                            <p>Economie</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="subject-item-semester2-result">
+                            <p>Algèbre</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="subject-item-semester2-result">
+                            <p>Probabilité</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="subject-item-semester2-result">
+                            <p>Comptabilité</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="subject-item-semester2-result">
+                            <p>Espagnol</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="subject-item-semester2-result">
+                            <p>Anglais</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="subject-item-semester2-result">
+                            <p>Analyse</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="subject-item-semester2-result">
+                            <p>Français</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="moy-item semester1-moy-item">
+                            <p>Moyenne</p>
+                            <p class="average-glob-field"></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="general-result-div">
+                    <button class="result-div-head">
+                        <span>Générale</span>
+                    </button>
+                    <ul class="general-result-list">
+                        <li class="subject-item-general-result">
+                            <p>Economie</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="subject-item-general-result">
+                            <p>Algèbre</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="subject-item-general-result">
+                            <p>Statistique Descriptive</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="subject-item-general-result">
+                            <p>Probabilité</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="subject-item-general-result">
+                            <p>Comptabilité</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="subject-item-general-result">
+                            <p>Espagnol</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="subject-item-general-result">
+                            <p>Anglais</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="subject-item-general-result">
+                            <p>Analyse</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="subject-item-general-result">
+                            <p>Français</p>
+                            <p class="average-field"></p>
+                        </li>
+                        <li class="moy-item semester1-moy-item">
+                            <p>Moyenne</p>
+                            <p class="average-glob-field"></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button id="sync-btn" class="primary-btn">
+        <i class="uil uil-sync"></i>
+    </button>
+    
+    <script src="default.js"></script>
+    <script src="submission.js"></script>
+    <script src="computing-average.js"></script>
+    <script src="global-notes.js"></script>
+    <script src="index.js"></script>
+</body>
+
+<!--
+    ******SubjectNotes | Pensez-y tranquillement - v0.0.06.2021 - Minimum Viable Version*******
+        Concue et développée par georgescreates (Georges Ludwing Ashley) : UI/UX Designer - FrontEnd Developper - Content Creator
+        GitHub Repository : 
+        Any recommendations ? Contact me ...
+            Github : https://github.com/georgescreates
+            YouTube : https://www.youtube.com/channel/UC7GP4BzO5ALaJXDSmp0nrug
+            Instagram : https://www.instagram.com/georgescreates
+            Twitter : https://twitter.com/georgescreates
+            Dribbble  : https://dribbble.com/georgescreates
+            Behance : https://www.behance.net/georgescreates
+
+    ******Idees que j'ai eu au cours du developpement de l'app.******
+        1- Fe yon title paret ak tout enfomasyon konsenan yon matye le itilizate a pase souri a sou li. Done yo ap changeable avek Javascript. /230721 : konplike. Senkronizasyon done yo pa koresponn ak vale ki afiche yo.
+        2- Mete yon bouton reset pou efase tout done yo sou localStorage lan. /230721 : fait
+        3- Etabli de vale pa defo pou varyab yo nan localStorage lan. Konsa, ap tou gen vale pou kontabilize. /210721 : pas une bonne idee selon algo an. Mwen ap re ekri li. /230721 : mwen etabli valeur par defaut yo, sof ke mpa save yo nan localStorage lan.
+        4- Ajoute yon ti animasyon sou baret yon matye pou pemet itilizate a konnen kibo matye li sot met a jou a ye. On pulse animation gris.
+        5- Pwopoze des simulations. tankou, pemet itilizate a kapab simile yon mwayen 60 pou tout matye yo pou li we ak ki mwayen lap fini. /230721 : Pou yon lot version
+        6- Repanse sou eske ou met te delete tout variable ke ou rele nancomputing-average.js lan aloske ou te gentan rele yo nan index.js lan. /220721 : pas necessaire. 
+           Mwen oblije re ekri algo an. Donnee yo te mal kontabilize
+
+    ******Historique de la conception de la version 0**********
+        Partie Design de l'interface realisee le 1er Juin 2021
+        Partie Developpement de l'interface avec HTML/CSS commence le 3 Juin 2021
+        Partie algorithme/calcul avec JavaScript commence le 23 Juin 2021
+        Partie algorithme de calcul avec JavaScript terminee le 21 Juillet 2021
+
+        Partie algorithme doit etre repensee. Celui actuel ne performe pas efficacement les operations. 22 Juillet 2021
+        Partie algorithme reecrite. Cela fonctionne maintenant. 23 Juillet 2021
+-->
+
+</html>
