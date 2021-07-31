@@ -347,8 +347,8 @@ body {
 
 #sync-btn {
   position: fixed;
-  bottom: 3%;
-  right: 2%;
+  bottom: 0.5vh;
+  right: 0.5vw;
 
   border-radius: 100%;
 
@@ -358,6 +358,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transform: translate(-50%,-50%);
 
   background-color: var(--main-green);
 }
