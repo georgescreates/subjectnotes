@@ -1,12 +1,8 @@
 //Target elements from the DOM
 var averagesParag = document.getElementsByClassName('averages-p');
 var selectedOption = document.getElementsByClassName('selected-option');
-var subjectItems = document.getElementsByClassName('subject-item');
 
-
-//Functions for setting default values to variables
-
-
+//Functions for setting default values to variables if there is no available values and computing the average
 submitBtn.addEventListener('click', () => {
     //Computing average for Intra of Semester 1
     if(selectedOption[3].value == "Intra 1"){
@@ -187,6 +183,7 @@ submitBtn.addEventListener('click', () => {
         //Displaying the average
         averagesParag[2].innerHTML = intraS2Average;
     }
+
 
 
 
