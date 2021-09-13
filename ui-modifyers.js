@@ -1,6 +1,6 @@
 var periodHeadBtns = document.getElementsByClassName('period-box-head');
 var periodBoxBody = document.getElementsByClassName('period-box-body');
-var periodBos = document.getElementsByClassName('period-box');
+var periodBox = document.getElementsByClassName('period-box');
 
 var semesterDiv = document.getElementsByClassName('semester-div')
 
