@@ -96,9 +96,8 @@ var subjS2NoteAverage = localStorage.getItem('subjS2NoteAverage');
 
 var subjNoteAverage = localStorage.getItem('subjNoteAverage');
 
-var syncBtn = document.getElementById('sync-btn');
-syncBtn.addEventListener('click', () => {
-    
+var resetBtn = document.getElementById('reset-btn');
+resetBtn.addEventListener('click', () => {
     if (confirm("Appuyez sur \'OK\' si vous êtes vraiment sûr de vouloir tout effacer.")) {
         window.localStorage.clear();
         location.reload();
