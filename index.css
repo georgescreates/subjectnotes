@@ -1,20 +1,30 @@
+/* About the body */
 body {
+  height: auto;
+  width: 100%;
+
+  display: block;
+
+  background-color: var(--white);
+  color: var(--black);
+}
+
+/* About the main */
+main {
   width: 100%;
   height: auto;
   min-height: 100vh;
 
   display: grid;
   grid-template-columns: 0.7fr 3.3fr 1fr;
-
-  background-color: var(--white);
-  color: var(--black);
 }
 
+/* About the left section */
 #left-section {
-  padding: 1.7rem 0rem;
-
   height: 100vh;
   width: 100%;
+
+  padding: 1.7rem 0rem;
 
   display: flex;
   flex-direction: column;
@@ -60,35 +70,37 @@ body {
   margin-bottom: 20px;
 }
 
+/* About the mid section */
 #mid-section {
+  height: 100vh;
+  width: 100%;
+
   border: 3px dashed var(--gray1);
   border-top: none;
   border-bottom: none;
 
   display: flex;
   flex-direction: column;
-
-  width: 100%;
-  height: auto;
-  max-height: 100vh;
 }
 
 .form-div {
   width: 100%;
-  height: auto;
-  min-height: 20vh;
+  height: 20vh;
 
   display: block;
+
+  /* border: 2px solid green; */
 }
 
 #form {
-  display: flex;
-  flex-direction: column;
-
   width: 100%;
   height: 100%;
 
-  padding: 1.7rem 1rem 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 1.5rem 1.7rem 0.2rem;
 }
 
 .options-div {
@@ -102,16 +114,16 @@ body {
 }
 
 .option-box {
+  width: 15%;
+
   display: flex;
   flex-direction: column;
-
-  width: 15%;
 }
 
 .option-box label {
   font-weight: var(--semibold);
 
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.4rem;
 }
 
 .option-box select,
@@ -133,52 +145,60 @@ body {
   justify-content: flex-end;
 }
 
-.semesters-div {
-  width: auto;
+.submit-div button {
+  letter-spacing: 0.8px;
+}
+
+#semesters-div
+{
+  width: 100%;
   height: auto;
   min-height: 80vh;
 
   overflow: auto;
 }
 
-.semesters-div::-webkit-scrollbar,
-.period-boxes-div::-webkit-scrollbar,
-.result-div-container::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
-}
-
 .semester-div {
   width: 100%;
-  height: 60vh;
+  height: auto;
 
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
+
+  display: flex;
+  flex-direction: column;
 }
 
-.semester-div h5 {
-  margin: 1rem 0rem 0rem 1rem;
+.semester-div-head
+{
+  height: auto;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+.semester-div-head h5 {
+  margin: 1rem;
 }
 
 .period-boxes-div {
   width: 66vw;
-  height: 100%;
-
-  margin-top: 1rem;
+  height: auto;
 
   display: grid;
   grid-template-columns: repeat(3, 2fr);
   grid-column-gap: 1rem;
 
-  align-items: center;
+  align-items: top;
 
-  padding: 0px 1rem;
+  padding: 1.5rem;
 
   overflow: auto;
 }
 
 .period-box {
-  height: 90%;
-  width: 23.5rem;
+  width: 23.5vw;
+  height: auto;
 
   border-radius: 1rem;
 
@@ -187,7 +207,7 @@ body {
 
 .period-box-head,
 .period-box-bottom {
-  height: 11%;
+  height: 3rem;
   width: 100%;
 
   display: flex;
@@ -206,12 +226,14 @@ body {
 }
 
 .period-box-body {
-  height: 78%;
+  height: auto;
   width: 100%;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  margin: 0.5rem 0px;
 }
 
 .subject-list {
@@ -254,6 +276,8 @@ body {
   border: none;
 
   font-weight: var(--semibold);
+
+  pointer-events: none;
 }
 
 .period-box-bottom {
@@ -266,7 +290,19 @@ body {
   font-weight: var(--semibold);
 }
 
+.semesters-div::-webkit-scrollbar,
+.period-boxes-div::-webkit-scrollbar,
+.result-div-container::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* About the right section */
 #right-section {
+  height: 100vh;
+  width: 100%;
+
   padding: 0.3rem 0rem 1rem;
 
   display: flex;
@@ -285,10 +321,10 @@ body {
 }
 
 .result-div-head {
-  padding: 1.2rem 1rem;
-
   width: 100%;
   height: auto;
+
+  padding: 1.2rem 1.5rem;
 
   display: flex;
   align-items: center;
@@ -296,7 +332,7 @@ body {
 
   background-color: var(--gray1);
 
-  border-radius: 0px;
+  border-radius: 0%;
 }
 
 .result-div-head span {
@@ -316,17 +352,7 @@ body {
   padding-bottom: 3rem;
 }
 
-.period-result-div ul,
-.general-result-div ul {
-  display: flex;
-  flex-direction: column;
-
-  width: 100%;
-  height: auto;
-}
-
-.period-result-div ul li,
-.general-result-div ul li {
+.semester-result-list li{
   width: 100%;
   height: auto;
 
@@ -345,10 +371,38 @@ body {
   font-weight: var(--extrabold);
 }
 
-#sync-btn {
+/* About the footer */
+footer {
+  width: 100%;
+  height: 7vh;
+
+  padding: 0px 10%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer small
+{
+  text-align: center;
+}
+
+footer small span {
+  font-weight: var(--bold);
+}
+
+footer small a {
+  color: var(--main-green);
+
+  font-weight: var(--semi-bold);
+}
+
+/* About the reset button */
+#reset-btn {
   position: fixed;
-  bottom: 0.5vh;
-  right: 0.5vw;
+  bottom: 0.3vh;
+  right: 0.2vw;
 
   border-radius: 100%;
 
@@ -359,11 +413,11 @@ body {
   align-items: center;
   justify-content: center;
 
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 
   background-color: var(--main-green);
 }
 
-#sync-btn i {
+#reset-btn i {
   font-size: var(--body-size);
 }
