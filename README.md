@@ -1,6 +1,6 @@
 # SubjectNotes - Think quietly about it.
 
-![Thumbnail for "Subject Notes - v0.0.06.2021"](./images/v00062021-thumbnail.png)
+![Thumbnail for "Subject Notes - v0.1.01.0921"](./images/v01010921-thumbnail.png)
 
 ## Hey ! How are you doing ?
 
